@@ -37,7 +37,7 @@ export default function Home() {
 
   const achievements = [
     { icon: "🚀", text: "2 years experience of System Monitoring" },
-    { icon: "💼", text: "Built a website for a cooperative client" },
+    { icon: "💼", text: "Built a website for a cooperative organization" },
     { icon: "🏆", text: "Independently planned and completed 16 website." },
     { icon: "📱", text: "Designed high-fidelity prototypes using Figma." },
   ];
@@ -150,7 +150,11 @@ export default function Home() {
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
-            { name: "REST APIs", icon: "🌐", color: "from-sky-500 to-blue-500" },
+            {
+              name: "REST APIs",
+              icon: "🌐",
+              color: "from-sky-500 to-blue-500",
+            },
             { name: "React", icon: "⚛️", color: "from-sky-500 to-blue-500" },
             {
               name: "TypeScript",
