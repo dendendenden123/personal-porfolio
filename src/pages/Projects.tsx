@@ -173,11 +173,7 @@ export default function Projects() {
           >
             Featured Projects
           </h2>
-          <span
-            className={`text-sm ${isDark ? "text-zinc-400" : "text-zinc-500"}`}
-          >
-            {filteredFeatured.length} projects
-          </span>
+         
         </div>
 
         {filteredFeatured.length === 0 ? (
