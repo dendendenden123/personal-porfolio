@@ -36,7 +36,7 @@ export default function Home() {
   }, [currentIndex, roles]);
 
   const achievements = [
-    { icon: "🚀", text: "2 years of System Monitoring" },
+    { icon: "🚀", text: "2 years experience of System Monitoring" },
     { icon: "💼", text: "Built a website for a cooperative client" },
     { icon: "🏆", text: "Independently planned and completed 16 website." },
     { icon: "📱", text: "Designed high-fidelity prototypes using Figma." },
@@ -150,6 +150,7 @@ export default function Home() {
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
+            { name: "REST APIs", icon: "🌐", color: "from-sky-500 to-blue-500" },
             { name: "React", icon: "⚛️", color: "from-sky-500 to-blue-500" },
             {
               name: "TypeScript",
@@ -180,8 +181,8 @@ export default function Home() {
               color: "from-indigo-500 to-blue-600",
             },
             { name: "Docker", icon: "🐳", color: "from-blue-400 to-sky-600" },
-            { name: "HTML", icon: "🏗️", color: "from-sky-500 to-blue-500" },
-            { name: "CSS", icon: "🎨", color: "from-sky-500 to-blue-500" },
+            { name: "HTML5", icon: "🏗️", color: "from-sky-500 to-blue-500" },
+            { name: "CSS3", icon: "🎨", color: "from-sky-500 to-blue-500" },
           ].map((tech) => (
             <div
               key={tech.name}
