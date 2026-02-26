@@ -60,7 +60,7 @@ export default function Projects() {
 
   const [repos, setRepos] = useState<GithubRepo[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [filter, setFilter] = useState<string>("all");
+  const [filter] = useState<string>("all");
   const [searchTerm, setSearchTerm] = useState("");
 
   const githubUsername = "dendendenden123";
@@ -85,12 +85,6 @@ export default function Projects() {
       ),
   );
 
-  // Get unique languages from repos
-  const languages = useMemo(() => {
-    if (!repos) return [];
-    const langs = new Set(repos.map((r) => r.language).filter(Boolean));
-    return ["all", ...Array.from(langs)];
-  }, [repos]);
 
   // Filter repos based on language and search
   const filteredRepos = useMemo(() => {
